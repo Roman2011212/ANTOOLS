@@ -1,0 +1,93 @@
+:root {
+  --color-background-antools: #1e252b;
+
+  --color-bg-primary: #ffa537;
+
+  --color-text-add: #ff6e30;
+
+  --color-team-section: #283036;
+
+  --color-header-border: #ffffff38;
+
+  --color-header-border: #ffffff20;
+
+  --color-product-name: rgba(255, 255, 255, 0.78);
+
+  --color-header-logo: rgba(255, 255, 255, 0.9);
+
+  --color-header-nav: #ffffff55;
+
+  --color-header-text: #ffffff;
+  --color-type-apps: rgba(255, 165, 55, 0.55);
+
+  --font-primary: "Poppins", sans-serif;
+
+  --font-secondary: "Roboto", sans-serif;
+
+  --font-secondary: "Lora", serif;
+}
+body {
+  background-color: var(--color-background-antools);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--color-header-nav);
+}
+.container {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.header-logo {
+  font-weight: 600;
+  font-size: 22px;
+  color: var(--color-header-logo);
+}
+.nav-item {
+  font-size: 16px;
+}
+.nav-login {
+  font-size: 16px;
+}
+.nav-sign-in {
+  border-radius: 8px;
+  width: 118px;
+  height: 48px;
+  background-color: var(--color-text-add);
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--color-header-text);
+}
+.hero-title {
+  font-size: 50px;
+  line-height: 70px;
+  color: var(--color-header-logo);
+}
+.hero-point {
+  font-size: 50px;
+  line-height: 70px;
+  color: var(--color-text-add);
+}
+.hero-subtitle {
+  font-weight: 400;
+}
+.apps-title {
+  font-size: 48px;
+  line-height: 62px;
+  color: var(--color-header-logo);
+}
+.apps-item {
+  width: 392px;
+  height: 294px;
+}
+.apps-name {
+  font-size: 24px;
+  color: var(--color-product-name);
+}
+.apps-type {
+  font-weight: 400;
+  color: var(--color-type-apps);
+}
