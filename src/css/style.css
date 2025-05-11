@@ -85,32 +85,43 @@ body {
   color: var(--color-header-text);
 }
 .hero {
-  height: 570px;
-  display: block;
+  padding-top: 46px;
   background-image: url(../img/Illustration.png);
   background-repeat: no-repeat;
   background-position: right;
-  background-size: 580px;
 }
 .hero-title {
   font-size: 50px;
   line-height: 70px;
   color: var(--color-header-logo);
   max-width: 600px;
+  margin-bottom: 30px;
 }
 .hero-point {
   font-size: 50px;
   line-height: 70px;
   color: var(--color-text-add);
 }
+.hero-search {
+  margin-bottom: 110px;
+}
 .hero-subtitle {
   font-weight: 400;
   max-width: 487px;
+  margin-bottom: 60px;
 }
 .hero-image {
   display: flex;
   justify-content: right;
   align-items: center;
+}
+.hero-list {
+  display: flex;
+  gap: 20px;
+}
+.apps {
+  padding-top: 198px;
+  padding-bottom: 212px;
 }
 .apps-container {
   display: flex;
@@ -120,7 +131,7 @@ body {
 .apps-title {
   display: flex;
   justify-content: center;
-
+  margin-bottom: 25px;
   font-size: 48px;
   line-height: 62px;
   color: var(--color-header-logo);
@@ -128,35 +139,35 @@ body {
 .apps-subtitle {
   display: flex;
   justify-content: center;
+  margin-bottom: 90px;
 }
 .apps-list {
   display: flex;
-  gap: 32px;
+  column-gap: 24px;
+  row-gap: 100px;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  max-width: 1231px;
+  margin-bottom: 100px;
 }
 .apps-item {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 392px;
-  width: 294px;
+  flex-basis: calc((100% - 48px) / 3);
 }
 .apps-item:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 392px;
-  width: 294px;
   background: radial-gradient(
     circle at top right,
-    rgba(255, 102, 0, 0.4),
-    transparent 60%
+    rgba(255, 102, 0, 0.2),
+    transparent 40%
   );
 }
+
 .apps-name {
   font-size: 24px;
   color: var(--color-product-name);
@@ -166,7 +177,6 @@ body {
   color: var(--color-type-apps);
 }
 .apps-description {
-  max-width: 326px;
   font-weight: 400;
   font-size: 16px;
   color: var(--color-header-nav);
@@ -176,33 +186,34 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 184px;
-  height: 64px;
   font-size: 20px;
   color: var(--color-text-add);
   background-color: var(--color-background-antools);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 8px;
+  padding-left: 38px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-right: 38px;
 }
 .brands {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 253px;
-  width: 1224px;
-  border-radius: 25px;
-  backdrop-filter: blur(50px);
-  background: var(--color-brands-section);
+  padding-bottom: 188px;
 }
 .brands-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding-top: 55px;
+  padding-bottom: 55px;
+  background: var(--color-brands-section);
+  border-radius: 25px;
+  backdrop-filter: blur(50px);
+  background: radial-gradient(
+    circle at top left,
+    rgba(255, 69, 0, 0.15),
+    rgba(44, 53, 61, 0.2) 15%
+  );
 }
 .brands-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  margin-bottom: 55px;
   font-size: 24px;
   color: var(--color-header-logo);
 }
@@ -214,58 +225,46 @@ body {
   gap: 170px;
 }
 .newcomer-tools {
-  display: flex;
-  max-width: 1224px;
+  padding-bottom: 200px;
 }
 .newcomer-tools-container {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+}
+.newcomer-tools-body {
+  max-width: 427px;
 }
 .newcomer-tools-title {
-  display: flex;
-  justify-content: left;
   font-size: 48px;
   line-height: 62px;
   color: var(--color-header-logo);
+  margin-bottom: 30px;
 }
-.newcomer-tools-subtitle {
-  display: flex;
-  justify-content: left;
+.newcomer-tools-description {
+  margin-bottom: 60px;
 }
 .newcomer-tools-button {
-  border-radius: 8px;
   width: 198px;
   height: 58px;
+  border-radius: 8px;
   color: var(--color-header-text);
   background-color: var(--color-text-add);
 }
 .newcomer-tools-list {
   display: flex;
-  gap: 32px;
-  flex-direction: row;
-  justify-content: right;
-  align-items: center;
+  column-gap: 24px;
+  row-gap: 50px;
   flex-wrap: wrap;
   max-width: 600px;
-  max-height: 638px;
 }
 .newcomer-tools-item {
-  display: flex;
-  align-items: center;
-  justify-content: right;
-  height: 392px;
-  width: 294px;
+  flex-basis: calc((100% - 24px) / 2);
 }
 .newcomer-tools-item:hover {
-  display: flex;
-  align-items: center;
-  justify-content: right;
-  height: 392px;
-  width: 294px;
   background: radial-gradient(
     circle at top right,
-    rgba(255, 102, 0, 0.4),
-    transparent 60%
+    rgba(255, 102, 0, 0.2),
+    transparent 40%
   );
 }
 .newcomer-tools-name {
@@ -280,20 +279,37 @@ body {
   font-weight: 400;
   font-size: 14px;
 }
-.mentors-name {
-  font-size: 26px;
-  letter-spacing: 0.01em;
-  color: var(--color-product-name);
+.mentors-container {
+  display: flex;
+  justify-content: center;
 }
-.mentors-role {
-  font-weight: 400;
-  font-size: 16px;
+.mentors-body {
+  max-width: 399px;
+}
+.mentors-discription {
+  max-width: 393px;
+}
+.subscribe {
+  padding-top: 250px;
+  padding-bottom: 240px;
+}
+.subscribe-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .subscribe-title {
   font-size: 48px;
   line-height: 62px;
   color: var(--color-header-logo);
+  text-align: center;
+  margin-bottom: 25px;
 }
+.subscribe-subtitle {
+  margin-bottom: 100px;
+}
+
 .subscribe-button {
   width: 130px;
   height: 48px;
@@ -302,6 +318,18 @@ body {
   color: var(--color-header-text);
   background-color: var(--color-text-add);
   border-radius: 8px;
+}
+.footer {
+  padding-bottom: 98px;
+  padding-top: 70px;
+  border: 0.5px solid rgba(255, 255, 255, 0.15);
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-list {
+  gap: 115px;
 }
 .footer-logo {
   font-weight: 600;
@@ -316,6 +344,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 25px;
+  max-width: 260px;
 }
 .footer-list-title {
   font-size: 20px;
