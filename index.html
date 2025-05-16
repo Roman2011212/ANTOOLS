@@ -10,13 +10,24 @@
       href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Poppins:wght@400;500;600&family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./src/css/reset.css" />
     <link rel="stylesheet" href="./src/css/style.css" />
   </head>
   <body>
     <header class="header">
       <div class="container header-container">
-        <a class="header-logo" href="/index.html">antools.</a>
+        <div class="header-logo-mark">
+          <img class="header-mark" src="./src/img/group159.svg" alt="logo" />
+          <a class="header-logo" href="/index.html">antools.</a>
+        </div>
+
         <nav class="navigation">
           <ul class="nav-list">
             <li class="nav-item">
@@ -34,10 +45,10 @@
 
         <ul class="action-list">
           <li class="action-item">
-            <button href="#" class="action-button">Login</button>
+            <button class="action-button">Login</button>
           </li>
           <li class="action-item">
-            <button href="#" class="action-sign-in">Sign Up</button>
+            <button class="action-sign-in">Sign Up</button>
           </li>
         </ul>
       </div>
@@ -55,30 +66,39 @@
             Development tools
           </p>
           <form class="hero-search">
-            <input type="find more than 430+ tools..." /><button>Search</button>
+            <input
+              class="hero-search-box"
+              type="text"
+              placeholder="Find more than 430+ tools…"
+            />
+
+            <button class="hero-button" type="submit">Search</button>
           </form>
 
           <ul class="hero-list">
             <li class="hero-item">
-              <img
-                class="hero-link-img"
-                src="./src/img/bx_bxl-facebook.png"
-                alt="facebook"
-              />
+              <a href="https://www.facebook.com/?locale=pl_PL">
+                <img
+                  class="hero-link-img"
+                  src="./src/img/bx_bxl-facebook.png"
+                  alt="facebook"
+              /></a>
             </li>
             <li class="hero-item">
-              <img
-                class="hero-link-img"
-                src="./src/img/bx_bxl-instagram.png"
-                alt="instagram"
-              />
+              <a href="https://www.instagram.com/">
+                <img
+                  class="hero-link-img"
+                  src="./src/img/bx_bxl-instagram.png"
+                  alt="instagram"
+              /></a>
             </li>
             <li class="hero-item">
-              <img
-                class="hero-link-img"
-                src="./src/img/bx_bxl-twitter.png"
-                alt="twitter"
-              />
+              <a href="https://twitter.com/">
+                <img
+                  class="hero-link-img"
+                  src="./src/img/bx_bxl-twitter.png"
+                  alt="twitter"
+              /></a>
             </li>
           </ul>
         </div>
@@ -86,7 +106,7 @@
 
       <section class="apps">
         <div class="container apps-container">
-          <h1 class="apps-title">Most Popular Tools</h1>
+          <h2 class="apps-title">Most Popular Tools</h2>
           <p class="apps-subtitle">
             Tools for the best Designers and Developers most popularly used in
             the world
@@ -94,83 +114,186 @@
           <ul class="apps-list">
             <li class="apps-item">
               <article class="apps-article">
-                <div class="apps-icon">
+                <div class="apps-characteristic">
                   <img src="./src/img/grommet-icons_figma.svg" alt="FIGMA" />
+
+                  <span class="apps-text">
+                    <h5 class="apps-name">FIGMA</h5>
+                    <p class="apps-type">Free</p>
+                  </span>
                 </div>
 
-                <h5 class="apps-name">FIGMA</h5>
-                <p class="apps-type">Free</p>
-                <h6 class="apps-discription">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </h6>
+                <div class="apps-container-description">
+                  <h6 class="apps-discription">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </h6>
+                </div>
+
+                <div class="apps-inputs">
+                  <span class="apps-inouts-span">
+                    <label class="apps-like" aria-label="Like">
+                      <input class="like" type="checkbox" />
+                    </label>
+                    <label class="apps-fav" aria-label="favorites">
+                      <input class="fav" type="checkbox" />
+                    </label>
+                  </span>
+                  <button class="apps-card-button">Visit</button>
+                </div>
               </article>
             </li>
             <li class="apps-item">
               <article class="apps-article">
-                <div class="apps-icon">
+                <div class="apps-characteristic">
                   <img src="./src/img/logos_sketch.png" alt="Sketch" />
+
+                  <span class="apps-text">
+                    <h5 class="apps-name">Sketch</h5>
+                    <p class="apps-type">Trial & Paid</p>
+                  </span>
                 </div>
 
-                <h5 class="apps-name">Sketch</h5>
-                <p class="apps-type">Trial & Paid</p>
-                <h6 class="apps-discription">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </h6>
+                <div class="apps-container-description">
+                  <h6 class="apps-discription">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </h6>
+                </div>
+
+                <div class="apps-inputs">
+                  <span class="apps-inouts-span">
+                    <label class="apps-like" aria-label="Like">
+                      <input class="like" type="checkbox" />
+                    </label>
+                    <label class="apps-fav" aria-label="favorites">
+                      <input class="fav" type="checkbox" />
+                    </label>
+                  </span>
+                  <button class="apps-card-button">Visit</button>
+                </div>
               </article>
             </li>
             <li class="apps-item">
               <article class="apps-article">
-                <div class="apps-icon">
+                <div class="apps-characteristic">
                   <img
                     src="./src/img/logos_visual-studio-code.svg"
                     alt="Visual"
                   />
+
+                  <span class="apps-text">
+                    <h5 class="apps-name">Visual Studio Code</h5>
+                    <p class="apps-type">Free</p>
+                  </span>
                 </div>
 
-                <h5 class="apps-name">Visual Studio Code</h5>
-                <p class="apps-type">Free</p>
-                <h6 class="apps-discription">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </h6>
+                <div class="apps-container-description">
+                  <h6 class="apps-discription">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </h6>
+                </div>
+
+                <div class="apps-inputs">
+                  <span class="apps-inouts-span">
+                    <label class="apps-like" aria-label="Like">
+                      <input class="like" type="checkbox" />
+                    </label>
+                    <label class="apps-fav" aria-label="favorites">
+                      <input class="fav" type="checkbox" />
+                    </label>
+                  </span>
+                  <button class="apps-card-button">Visit</button>
+                </div>
               </article>
             </li>
             <li class="apps-item">
               <article class="apps-article">
-                <div class="apps-icon">
+                <div class="apps-characteristic">
                   <img src="./src/img/notion.svg" alt="notion" />
+
+                  <span class="apps-text">
+                    <h5 class="apps-name">Notion</h5>
+                    <p class="apps-type">Free & Paid</p>
+                  </span>
                 </div>
 
-                <h5 class="apps-name">Notion</h5>
-                <p class="apps-type">Free & Paid</p>
-                <h6 class="apps-discription">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </h6>
+                <div class="apps-container-description">
+                  <h6 class="apps-discription">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </h6>
+                </div>
+
+                <div class="apps-inputs">
+                  <span class="apps-inouts-span">
+                    <label class="apps-like" aria-label="Like">
+                      <input class="like" type="checkbox" />
+                    </label>
+                    <label class="apps-fav" aria-label="favorites">
+                      <input class="fav" type="checkbox" />
+                    </label>
+                  </span>
+                  <button class="apps-card-button">Visit</button>
+                </div>
               </article>
             </li>
             <li class="apps-item">
               <article class="apps-article">
-                <div class="apps-icon">
+                <div class="apps-characteristic">
                   <img src="./src/img/grommet-icons_slack.svg" alt="Slack" />
+
+                  <span class="apps-text">
+                    <h5 class="apps-name">Slack</h5>
+                    <p class="apps-type">Free & Paid</p>
+                  </span>
                 </div>
 
-                <h5 class="apps-name">Slack</h5>
-                <p class="apps-type">Free & Paid</p>
-                <h6 class="apps-discription">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </h6>
+                <div class="apps-container-description">
+                  <h6 class="apps-discription">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </h6>
+                </div>
+
+                <div class="apps-inputs">
+                  <span class="apps-inouts-span">
+                    <label class="apps-like" aria-label="Like">
+                      <input class="like" type="checkbox" />
+                    </label>
+                    <label class="apps-fav" aria-label="favorites">
+                      <input class="fav" type="checkbox" />
+                    </label>
+                  </span>
+                  <button class="apps-card-button">Visit</button>
+                </div>
               </article>
             </li>
+
             <li class="apps-item">
               <article class="apps-article">
-                <div class="apps-icon">
+                <div class="apps-characteristic">
                   <img src="./src/img/logos_invision-icon.svg" alt="" />
+
+                  <span class="apps-text">
+                    <h5 class="apps-name">Invision</h5>
+                    <p class="apps-type">Free & Paid</p>
+                  </span>
                 </div>
 
-                <h5 class="apps-name">Invision</h5>
-                <p class="apps-type">Free & Paid</p>
-                <h6 class="apps-discription">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </h6>
+                <div class="apps-container-description">
+                  <h6 class="apps-discription">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </h6>
+                </div>
+
+                <div class="apps-inputs">
+                  <span class="apps-inouts-span">
+                    <label class="apps-like" aria-label="Like">
+                      <input class="like" type="checkbox" />
+                    </label>
+                    <label class="apps-fav" aria-label="favorites">
+                      <input class="fav" type="checkbox" />
+                    </label>
+                  </span>
+                  <button class="apps-card-button">Visit</button>
+                </div>
               </article>
             </li>
           </ul>
@@ -219,70 +342,150 @@
           <ul class="newcomer-tools-list">
             <li class="newcomer-tools-item">
               <article class="newcomer-tools-atricle">
-                <div class="newcomer-tools-app">
+                <div class="newcomer-tools-characteristic">
                   <img
                     class="newcomer-tools-img"
                     src="./src/img/zeplin.svg"
                     alt="zeplin"
                   />
+
+                  <span class="newcomer-tools-text">
+                    <h5 class="newcomer-tools-name">Zeplin</h5>
+                    <p class="newcomer-tools-type">Free & Paid</p>
+                  </span>
                 </div>
 
-                <h5 class="newcomer-tools-name">Zeplin</h5>
-                <p class="newcomer-tools-type">Free & Paid</p>
-                <h6 class="newcomer-tools-app-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </h6>
+                <div class="newcomer-tools-container-descripyion">
+                  <h6 class="newcomer-tools-app-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </h6>
+                </div>
+
+                <div class="newcomer-tools-inputs">
+                  <span class="newcomer-tools-span">
+                    <label class="apps-like" aria-label="Like">
+                      <input class="like" type="checkbox" />
+                    </label>
+                    <label
+                      class="newcomer-tools-favorite"
+                      aria-label="favorites"
+                    >
+                      <input class="newcomer-tools-fav" type="checkbox" />
+                    </label>
+                  </span>
+                  <button class="newcomer-tools-card-button">Visit</button>
+                </div>
               </article>
             </li>
             <li class="newcomer-tools-item">
               <article class="newcomer-tools-atricle">
-                <div class="newcomer-tools-app">
+                <div class="newcomer-tools-characteristic">
                   <img
                     class="newcomer-tools-img"
                     src="./src/img/jb_phpstorm.png"
                     alt="PHPStorm"
                   />
+
+                  <span class="newcomer-tools-text">
+                    <h5 class="newcomer-tools-name">PHPStorm</h5>
+                    <p class="newcomer-tools-type">Free</p>
+                  </span>
                 </div>
 
-                <h5 class="newcomer-tools-name">PHPStorm</h5>
-                <p class="newcomer-tools-type">Free</p>
-                <h6 class="newcomer-tools-app-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </h6>
+                <div class="newcomer-tools-container-descripyion">
+                  <h6 class="newcomer-tools-app-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </h6>
+                </div>
+
+                <div class="newcomer-tools-inputs">
+                  <span class="newcomer-tools-span">
+                    <label class="apps-like" aria-label="Like">
+                      <input class="like" type="checkbox" />
+                    </label>
+                    <label
+                      class="newcomer-tools-favorite"
+                      aria-label="favorites"
+                    >
+                      <input class="newcomer-tools-fav" type="checkbox" />
+                    </label>
+                  </span>
+                  <button class="newcomer-tools-card-button">Visit</button>
+                </div>
               </article>
             </li>
             <li class="newcomer-tools-item">
               <article class="newcomer-tools-atricle">
-                <div class="newcomer-tools-app">
+                <div class="newcomer-tools-characteristic">
                   <img
                     class="newcomer-tools-img"
                     src="./src/img/jb_toolbox_app.svg"
                     alt="Toolbox"
                   />
+
+                  <span class="newcomer-tools-text">
+                    <h5 class="newcomer-tools-name">Toolbox</h5>
+                    <p class="newcomer-tools-type">Free</p>
+                  </span>
                 </div>
 
-                <h5 class="newcomer-tools-name">Toolbox</h5>
-                <p class="newcomer-tools-type">Free</p>
-                <h6 class="newcomer-tools-app-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </h6>
+                <div class="newcomer-tools-container-descripyion">
+                  <h6 class="newcomer-tools-app-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </h6>
+                </div>
+
+                <div class="newcomer-tools-inputs">
+                  <span class="newcomer-tools-span">
+                    <label class="apps-like" aria-label="Like">
+                      <input class="like" type="checkbox" />
+                    </label>
+                    <label
+                      class="newcomer-tools-favorite"
+                      aria-label="favorites"
+                    >
+                      <input class="newcomer-tools-fav" type="checkbox" />
+                    </label>
+                  </span>
+                  <button class="newcomer-tools-card-button">Visit</button>
+                </div>
               </article>
             </li>
             <li class="newcomer-tools-item">
-              <article class="">
-                <div class="newcomer-tools-app">
+              <article class="newcomer-tools-atricle">
+                <div class="newcomer-tools-characteristic">
                   <img
                     class="newcomer-tools-img"
                     src="./src/img/procreate.svg"
                     alt="procreate"
                   />
+
+                  <span class="newcomer-tools-text">
+                    <h5 class="newcomer-tools-name">Procreate</h5>
+                    <p class="newcomer-tools-type">Paid</p>
+                  </span>
                 </div>
 
-                <h5 class="newcomer-tools-name">Procreate</h5>
-                <p class="newcomer-tools-type">Paid</p>
-                <h6 class="newcomer-tools-app-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </h6>
+                <div class="newcomer-tools-container-descripyion">
+                  <h6 class="newcomer-tools-app-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </h6>
+                </div>
+
+                <div class="newcomer-tools-inputs">
+                  <span class="newcomer-tools-span">
+                    <label class="apps-like" aria-label="Like">
+                      <input class="like" type="checkbox" />
+                    </label>
+                    <label
+                      class="newcomer-tools-favorite"
+                      aria-label="favorites"
+                    >
+                      <input class="newcomer-tools-fav" type="checkbox" />
+                    </label>
+                  </span>
+                  <button class="newcomer-tools-card-button">Visit</button>
+                </div>
               </article>
             </li>
           </ul>
@@ -291,24 +494,25 @@
 
       <section class="mentors">
         <div class="container mentors-container">
-      <div class="mentors-body">
-        <article class="mentors-article">
-          <div class="mentors-container">
-            <img
-              class="mentors-image"
-              src="./src/img/Group 1434.png"
-              alt=""
-            />
-          </div>
-      </div>
-            <h6 class="mentors-discription">
-              Incididunt cillum do sint sint enim ullamco id deserunt mollit qui
-              reprehenderit do. Velit ex tempor cillum ad sint occaecat. Do
-              nulla velit labore occaecat do deserunt Lorem magna officia
-              incididunt consectetur amet. Sunt consectetur veniam minim ex
-              commodo sint non. Occaecat aute officia excepteur non laboris id
-              qui ad.
-            </h6>
+          <article class="mentors-article">
+            <div class="mentors-body">
+              <div class="mentors-img">
+                <img
+                  class="mentors-image"
+                  src="./src/img/group1434.png"
+                  alt="ronald"
+                />
+              </div>
+
+              <h6 class="mentors-discription">
+                Incididunt cillum do sint sint enim ullamco id deserunt mollit
+                qui reprehenderit do. Velit ex tempor cillum ad sint occaecat.
+                Do nulla velit labore occaecat do deserunt Lorem magna officia
+                incididunt consectetur amet. Sunt consectetur veniam minim ex
+                commodo sint non. Occaecat aute officia excepteur non laboris id
+                qui ad.
+              </h6>
+            </div>
           </article>
         </div>
       </section>
@@ -319,10 +523,15 @@
             Join us and get tips & tricks to become a great Designer and
             Developer
           </h3>
-          <form class="subscribe-button-input">
-            <input type="" /><button class="subscribe-button">Join Us</button>
+          <form class="subscribe-email-form">
+            <input
+              class="subscribe-email"
+              type="email"
+              placeholder="Enter your email..."
+              required
+            />
+            <button class="subscribe-button" type="submit">Join Us</button>
           </form>
-         
         </div>
       </section>
     </main>
@@ -330,13 +539,16 @@
       <div class="container footer-container">
         <ul class="footer-list">
           <li class="footer-item">
-            <a class="footer-logo" href="/index.html">antools.</a>
+            <div class="footer-logo-mark">
+              <img class="footer-mark" src="./src/img/logo.svg" alt="logo" />
+              <a class="footer-logo" href="/index.html">antools.</a>
+            </div>
           </li>
           <li class="footer-copyright">Copyright 2021. Antools</li>
-          <p class="footer-description">
+          <li class="footer-description">
             Antool is a web collection of information on paid or free Design and
             Development tools
-          </p>
+          </li>
         </ul>
         <ul class="footer-list">
           <li class="footer-item">
